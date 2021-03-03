@@ -21,7 +21,7 @@ namespace MVCManagStdnts.Controllers
             return View(displaydata);
         }
 
-        [HttpPost]
+        [HttpGet]
         public async Task<IActionResult> Index(string studentsearch)
         {
             ViewData["GetStudentdetails"] = studentsearch;
